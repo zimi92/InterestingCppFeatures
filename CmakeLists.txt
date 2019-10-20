@@ -1,0 +1,9 @@
+cmake_minimum_required (VERSION 2.6)
+project (MainProject)
+ 
+# add the binary tree to the search path for include files
+# so that we will find TutorialConfig.h
+include_directories("${PROJECT_BINARY_DIR}/src/cpp", "${PROJECT_BINARY_DIR}/src/hpp", "${PROJECT_BINARY_DIR}/src/")
+ 
+# add the executable
+add_executable(MainProject "${PROJECT_BINARY_DIR}/src/main.cpp)
