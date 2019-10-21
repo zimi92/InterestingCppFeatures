@@ -10,7 +10,8 @@ set (CMAKE_CXX_STANDARD 17)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # add the executable
-add_executable(MainProject "${PROJECT_BINARY_DIR}/src/main.cpp")
 
+set(SOURCES ${PROJECT_BINARY_DIR}/src/main.cpp ${PROJECT_BINARY_DIR}/src/hpp/Variant.h)
+add_executable(MainProject ${SOURCES})
 #set defaul project
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT MainProject)
