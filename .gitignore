@@ -3,5 +3,11 @@
 #ignore everything except
 
 !src/
+!src/hpp/
+!src/cpp/
+!src/*
+!src/hpp/*
+!src/cpp/*
+
 !.gitignore
 !CmakeLists.txt
