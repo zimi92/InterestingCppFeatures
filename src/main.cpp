@@ -4,12 +4,12 @@
 #include "pch.h"
 #include <iostream>
 #include "Variant.h"
+#include "StringView.h"
 
 int main()
 {
-	Variant v;
-	v.exampleVisitor();
-    std::cout << "Hello World!\n"; 
+    StringViewExample exmpl;
+	exmpl();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

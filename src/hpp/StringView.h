@@ -10,7 +10,8 @@ class StringViewExample
     static void runnable() {
         std::string str = "string longer than the one being hold on stack by most compilers";
         std::string_view view = str;
-        std::cout << "Asd" << std::endl;
+        std::cout << "string view adress " << (void*)view.data() << " substr addr: " << (void*)view.substr(5, 5).data() << " value of substring " << view.substr(5,5).data() << std::endl;
+        std::cout << "string adress " << (void*)str.data() << " substr addr: " << (void*)str.substr(5, 5).data() << " value of substring " << str.substr(5, 5).data() << std::endl;
     }
     public:
     void operator()() { runnable(); };
